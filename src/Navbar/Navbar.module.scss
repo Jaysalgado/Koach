@@ -102,3 +102,90 @@
   color: white;
   border-style: solid;
 }
+@media (max-width: 1207px) {
+  .leftSection {
+    width: 50%;
+  }
+
+  .rightSection {
+    width: 35%;
+  }
+
+  .loginButton,
+  .signupButton {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    height: 8%;
+  }
+  .leftSection {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .rightSection {
+    width: 60%;
+    justify-content: flex-end;
+  }
+  .languageDropdown {
+    font-size: 25px;
+  }
+
+  .loginButton,
+  .signupButton {
+    width: 25%;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 15px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    z-index: 10;
+  }
+
+  .mobileLink {
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+
+    &:hover {
+      background-color: #f7f7f7;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

@@ -1,3 +1,70 @@
 .featureBox {
-  height: 100vmin;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  h2 {
+    font-size: 8vmin;
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 5vmin;
+    align-self: flex-start;
+    color: #0147ab;
+  }
+  .wordsR {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 35%;
+    align-content: flex-start;
+    margin-right: 10%;
+    text-align: left;
+    font-weight: 500;
+
+    .par,
+    .list {
+      align-content: flex-start;
+      text-align: left;
+      justify-content: flex-start;
+      font-size: large;
+    }
+  }
+
+  .imgR {
+    border-radius: 20px;
+    height: 40vmin;
+    width: 75vmin;
+    margin-right: 10%;
+  }
+  .wordsL {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 35%;
+    align-content: flex-start;
+    margin-left: 10%;
+    font-weight: 500;
+    text-align: left;
+
+    .par {
+      align-content: flex-start;
+      font-size: large;
+      justify-content: flex-start;
+    }
+  }
+
+  .imgL {
+    border-radius: 20px;
+    height: 40vmin;
+    width: 75vmin;
+    margin-left: 10%;
+  }
+  .together {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+  }
 }
